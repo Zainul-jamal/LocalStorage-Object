@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: blueviolet;
+            color: rgb(230, 230, 239);
+        }
+    </style>
+</head>
+<body>
+    <h1>Login User Name is:</h1>
+    <h1 id="heading"></h1>
+    <!-- <button onclick="check()">Check</button> -->
+
+    <script>
+        var localName = localStorage.getItem('UserName');
+            console.log('Local value:', localName);
+            var headingElement = document.getElementById('heading');
+            headingElement.innerText = localName ;
+            
+        
+    </script>
+</body>
+</html>
